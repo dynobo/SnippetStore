@@ -1,4 +1,4 @@
-# Snippet Store
+# SnippetStore
 Extension for [Albert Launcher](https://albertlauncher.github.io/), used to store and retrieve code-snippets or other texts
 
 I coded this, because I like Albert and use it a lot, and I didn't find a nice tool for easy access to code snippets stored as plain text files on my drive.

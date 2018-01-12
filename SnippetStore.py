@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Snippet Store
+"""SnippetStore
 
 Add text snippets as md file in folder, search them, and copy to clipboard."""
 
@@ -12,7 +12,7 @@ import subprocess
 from send2trash import send2trash
 
 __iid__ = 'PythonInterface/v0.1'
-__prettyname__ = 'Snippet Store'
+__prettyname__ = 'SnippetStore'
 __version__ = '0.1'
 __trigger__ = 'sn '
 __author__ = 'dynobo'
