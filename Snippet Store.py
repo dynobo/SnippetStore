@@ -90,7 +90,10 @@ snippets = snippets(SNIPPET_PATH)
 
 
 def initialize():
-    snippets.update_store()
+    try:
+        snippets.update_store()
+    except Exception as e:
+        critical(str(e))
 
 
 def handleQuery(query):
