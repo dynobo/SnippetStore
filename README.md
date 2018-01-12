@@ -1,8 +1,8 @@
 # Snippet Store
 Extension for [Albert Launcher](https://albertlauncher.github.io/), used to store and retrieve code-snippets or other texts
 
-I coded this, because I like Albert and use it a lot, and I didn't find a nice software for easy access to code snippets stored as plain text files on my drive.
-(IMHO plaintext files has the advantages over DBs or json/xml, that they are easier to sync e.g. with cloud and also accessible/readable without additional applications.)
+I coded this, because I like Albert and use it a lot, and I didn't find a nice tool for easy access to code snippets stored as plain text files on my drive.
+(imho plaintext files have the advantages over DBs or json/xml, that they are easier to sync e.g. with cloud and also accessible/readable without additional applications.)
 
 ![screenshot](./snippet_store.png)
 
