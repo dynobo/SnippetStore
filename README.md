@@ -61,8 +61,9 @@ sudo du -sh /data/mongodb
 
 For the results, see Screenshot above.
 
-## Todo
-Not sure if I ever do this, as I'm fine with the current state. But maybe if requested or of interest by others:
+## Roadmap
+Not sure if I ever do this, as I'm fine with the current state. But maybe if requested or of interest by others... *hint* *hint*
 - Create new snippet from clipboard
 - Move configuration out of source (not sure to where...)
+- Find a solution for "Move to Trash" without external dependencies
 - Test performance for many snippets
