@@ -8,8 +8,8 @@ from albertv0 import *
 import glob
 import re
 import os
-import subprocess
 from send2trash import send2trash
+from subprocess import call
 
 __iid__ = 'PythonInterface/v0.1'
 __prettyname__ = 'SnippetStore'
@@ -19,7 +19,7 @@ __author__ = 'dynobo'
 __bin__ = 'sh'
 __dependencies__ = ['send2trash']
 
-SNIPPET_PATH = '/home/holger/cumulus/Notes/snippets'
+SNIPPET_PATH = '/home/holger/cirrus/notes/snippets'
 RECURSIVE = True
 SNIPPET_EXT = 'md'
 iconPath = iconLookup('gedit')
@@ -89,6 +89,12 @@ class snippets():
 snippets = snippets(SNIPPET_PATH)
 
 
+def paste_directly(text):
+    text = text.replace('\n\n','\r')
+    os.system('sleep 0.02 && xdotool type "'+ text + '" &')
+    return
+
+
 def initialize():
     try:
         snippets.update_store()
@@ -115,6 +121,8 @@ def handleQuery(query):
                              subtext=snippet['subtitle'][:120],
                              completion=query.rawString,
                              actions=[
+                                 FuncAction('Paste directly',
+                                            lambda snippet=snippet: paste_directly(snippet['text'])),
                                  ClipAction(text='Copy to Clipboard',
                                             clipboardText=snippet['text']),
                                  UrlAction(
