@@ -12,17 +12,19 @@ I coded this, because I like Albert and use it a lot, and I didn't find a nice t
 - Search for text in those snippet-files
 - Rank results based on number, position and sourroundings of occurrences
 - Actions:
-   - Copy to clipboard (default)
+   - Paste directly (default)
+   - Copy to clipboard
    - Open in associated application
    - Move to Trash bin
    - Open Snippet-Folder ("sn" without searchterm)
 
 ## Dependencies
 - [Send2Trash](https://pypi.python.org/pypi/Send2Trash): `pip install Send2Trash`
+- [xdotool](https://www.semicomplete.com/projects/xdotool) *search for it in your distro's repository*
 
 ## Manual installation
 Download [Snippet Store.py](https://github.com/dynobo/snippet_store/blob/master/Snippet%20Store.py) to one of Albert Launchers folders for python extensions:
--  ~/.local/share/albert/org.albert.extension.python/modules
+- ~/.local/share/albert/org.albert.extension.python/modules
 - /usr/local/share/albert/org.albert.extension.python/modules
 - /usr/share/albert/org.albert.extension.python/modules
 

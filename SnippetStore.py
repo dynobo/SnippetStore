@@ -17,7 +17,7 @@ __version__ = '0.1'
 __trigger__ = 'sn '
 __author__ = 'dynobo'
 __bin__ = 'sh'
-__dependencies__ = ['send2trash']
+__dependencies__ = ['send2trash','xdotool']
 
 SNIPPET_PATH = '/home/holger/cirrus/notes/snippets'
 RECURSIVE = True
@@ -126,7 +126,7 @@ def handleQuery(query):
                                  ClipAction(text='Copy to Clipboard',
                                             clipboardText=snippet['text']),
                                  UrlAction(
-                                     'Open', 'file://{}'.format(snippet['file'])),
+                                     'Open in Editor', 'file://{}'.format(snippet['file'])),
                                  FuncAction('Move to Recycle Bin',
                                             lambda snippet=snippet: send2trash(snippet['file']))
                         ]))
