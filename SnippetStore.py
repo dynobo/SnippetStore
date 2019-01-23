@@ -19,7 +19,7 @@ __author__ = 'dynobo'
 __bin__ = 'sh'
 __dependencies__ = ['send2trash','xdotool']
 
-SNIPPET_PATH = '/home/holger/cirrus/notes/snippets'
+SNIPPET_PATH = '/home/holger/cirrus/notes'
 RECURSIVE = True
 SNIPPET_EXT = 'md'
 iconPath = iconLookup('gedit')
@@ -28,7 +28,7 @@ iconPath = iconLookup('gedit')
 class snippets():
 
     def __init__(self, *args, **kwargs):
-        self.path = args[0]
+        self.path = args[0].rstrip('/')
         self.snippets_store = []
 
     def score(self, query, text):
